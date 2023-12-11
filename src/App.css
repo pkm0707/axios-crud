@@ -1,21 +1,27 @@
-.add-user{
-    display: flex;
+.user-cards{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    padding: 10px;
+}
+h1{
+    margin: 0px;
+}
+.add-product-form{
+    display:flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:10px;
-    padding: 20px;
-    /* background-image: url(https://www.lambertgroupproductions.com/canyon/wordpress_full_screen_background/images/bulletsFullWidth/03_bullets.jpg); */
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    padding: 10px;
+    margin: 0px;
 }
-.edit-user{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:10px;
-    padding: 20px;
-    /* background-image: url(https://www.lambertgroupproductions.com/canyon/wordpress_full_screen_background/images/bulletsFullWidth/03_bullets.jpg); */
-}
+
 
