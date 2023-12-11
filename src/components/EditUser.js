@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { useParams,useNavigate} from "react-router-dom"
 import { API } from "../Global";
 import { Button, TextField } from '@mui/material';
+import useWindowSize from 'react-use/lib/useWindowSize'
+import Confetti from 'react-confetti'
 
 export default function EditUser(){
     const { userid } = useParams(); //get parameters from URL
@@ -34,6 +36,7 @@ function EditUserForm({user}){
     const [companyname, setCompanyName] = useState(user.company.name)
     const [catchPhrase, setCatchPhrase] = useState(user.company.catchPhrase)
     const [bs, setBS] = useState(user.company.bs)
+    const { width, height } = useWindowSize()
     return(
         <div className="add-product-form">
             <TextField label="Name" variant="standard" value={name}
@@ -93,6 +96,7 @@ function EditUserForm({user}){
                 <br/>
                 <br/>
             <Button variant="contained" sx={{marginBottom:2}} color="success" onClick={() => {
+                <Confetti width={width} height={height}/>
                 const updateUser =  {
                     name: name,
                     email: email,

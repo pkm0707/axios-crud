@@ -4,6 +4,8 @@ import { API } from "../Global";
 import axios from 'axios';
 import {useFormik} from 'formik'
 import * as yup from 'yup'
+import useWindowSize from 'react-use/lib/useWindowSize'
+import Confetti from 'react-confetti'
 
 const formValidationsSchema = yup.object({
     name:yup.string()
@@ -64,6 +66,7 @@ const formValidationsSchema = yup.object({
 })
 
 export default function AddUser(){
+    const { width, height } = useWindowSize()
     const navigate = useNavigate()
     const formik = useFormik({
         initialValues:{name:"", email:"", username:"",street:"",suite:"",city:"",zipcode:"",lat:"",lan:"",phone:"",website:"",companyname:"",catchPhrase:"",bs:""},
@@ -161,6 +164,7 @@ export default function AddUser(){
             <br/>
             <br/>
             <Button type ="submit" sx={{marginBottom:2}} variant="contained" onClick={() => {
+                <Confetti width={width} height={height}/>
                 const newUser = {
                     name: formik.values.name,
                     email: formik.values.email,
