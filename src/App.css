@@ -1,0 +1,21 @@
+.add-user{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding: 20px;
+    /* background-image: url(https://www.lambertgroupproductions.com/canyon/wordpress_full_screen_background/images/bulletsFullWidth/03_bullets.jpg); */
+}
+.edit-user{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding: 20px;
+    /* background-image: url(https://www.lambertgroupproductions.com/canyon/wordpress_full_screen_background/images/bulletsFullWidth/03_bullets.jpg); */
+}
+
