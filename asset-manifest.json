@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/axios-crud/static/css/main.7eafd4f2.css",
+    "main.js": "/axios-crud/static/js/main.d90b4a92.js",
+    "static/js/787.4b9975e4.chunk.js": "/axios-crud/static/js/787.4b9975e4.chunk.js",
+    "index.html": "/axios-crud/index.html",
+    "main.7eafd4f2.css.map": "/axios-crud/static/css/main.7eafd4f2.css.map",
+    "main.d90b4a92.js.map": "/axios-crud/static/js/main.d90b4a92.js.map",
+    "787.4b9975e4.chunk.js.map": "/axios-crud/static/js/787.4b9975e4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7eafd4f2.css",
+    "static/js/main.d90b4a92.js"
+  ]
+}
